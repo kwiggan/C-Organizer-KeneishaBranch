@@ -247,7 +247,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pOJ-3h-bHZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1353.6231884057972" y="-291.29464285714283"/>
+            <point key="canvasLocation" x="1455" y="-398"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Y7H-Uo-vQl">
@@ -264,6 +264,9 @@
                                 <state key="normal" title="Give system generated test">
                                     <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wlh-aT-48U" kind="presentation" id="I3O-8S-DBk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eaL-t4-MfR">
                                 <rect key="frame" x="58" y="308" width="315" height="125"/>
@@ -277,8 +280,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="flQ-ST-iFY">
-                                <rect key="frame" x="20" y="778" width="67" height="30"/>
+                                <rect key="frame" x="20" y="754" width="113" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="8h1-9U-8DQ" kind="presentation" id="zp0-Yc-pqT"/>
@@ -295,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z5c-qT-iqB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2247.826086956522" y="-297.32142857142856"/>
+            <point key="canvasLocation" x="2230.434782608696" y="-398.4375"/>
         </scene>
         <!--Create Test Questions View Controller-->
         <scene sceneID="2rg-Dn-W37">
@@ -358,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7uw-g2-57V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2947.826086956522" y="-297.32142857142856"/>
+            <point key="canvasLocation" x="2992.753623188406" y="-398.4375"/>
         </scene>
         <!--Show Answer View Controller-->
         <scene sceneID="3xS-5W-C6K">
@@ -393,11 +397,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPi-jA-qlY">
-                                <rect key="frame" x="20" y="769" width="114" height="30"/>
+                                <rect key="frame" x="20" y="751" width="114" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="p3p-dM-LMR" kind="presentation" id="4CI-P2-Xn5"/>
+                                    <segue destination="uKq-z2-sPB" kind="show" id="YuL-uB-wBq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONGRATS! These Questions will appear on your next class test." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNE-jn-E1y">
@@ -429,7 +434,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vjg-w1-3hN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3731.884057971015" y="-297.32142857142856"/>
+            <point key="canvasLocation" x="3737.68115942029" y="-398.4375"/>
         </scene>
         <!--PROFILE-->
         <scene sceneID="l8X-oe-Ldu">
@@ -485,6 +490,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1MO-fQ-FTQ">
+                                <rect key="frame" x="20" y="745" width="131" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="uKq-z2-sPB" kind="show" id="mda-NG-eg0"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="Fun-Rv-XTj"/>
@@ -495,43 +509,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Eeg-KE-kOI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2297" y="356"/>
-        </scene>
-        <!--Show Answer View Controller-->
-        <scene sceneID="1tX-bt-NmH">
-            <objects>
-                <viewController id="rEj-ir-LAp" customClass="ShowAnswerViewController" customModule="C_Organizer" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8y5-I8-NKl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONGRATS! YOU'VE COMPLETED YOUR EXAM!   YOUR GRADE WILL BE POSTED AFTER 24/HR      " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44M-yD-Baf">
-                                <rect key="frame" x="0.0" y="256" width="414" height="180"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZs-Rn-caK">
-                                <rect key="frame" x="20" y="778" width="166" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Return to home page"/>
-                                <connections>
-                                    <segue destination="uKq-z2-sPB" kind="presentation" id="Vru-iJ-ZR6"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="HME-g0-wVu"/>
-                    </view>
-                    <connections>
-                        <outlet property="showAnswer" destination="44M-yD-Baf" id="Uk6-Mj-2hg"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4xK-Ve-bQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2962.3188405797105" y="348.88392857142856"/>
+            <point key="canvasLocation" x="2993" y="317"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="xP0-nY-03n">
@@ -651,8 +629,8 @@
         <image name="class" width="500" height="375"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="BBx-YP-JU5"/>
-        <segue reference="9Qr-h6-Yhk"/>
+        <segue reference="I3O-8S-DBk"/>
+        <segue reference="YuL-uB-wBq"/>
         <segue reference="zp0-Yc-pqT"/>
         <segue reference="tXH-y1-no9"/>
     </inferredMetricsTieBreakers>

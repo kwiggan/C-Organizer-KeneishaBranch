@@ -9,6 +9,7 @@
 import UIKit
 
 class CreateTestQuestionsViewController: UIViewController {
+    //create textfields connections
     @IBOutlet weak var inputOne: UITextField!
     
     @IBOutlet weak var inputTwo: UITextField!
@@ -16,7 +17,7 @@ class CreateTestQuestionsViewController: UIViewController {
     
     @IBOutlet weak var inputFour: UITextField!
 
-    
+    //enables a tranfer of data from one view controller to another
     @IBAction func submit(_ sender: Any)
     {
         if inputOne.text != ""
@@ -33,13 +34,14 @@ class CreateTestQuestionsViewController: UIViewController {
                }
         if inputFour.text != ""
                {
-                   performSegue(withIdentifier: "segue", sender: self)
+                   performSegue(withIdentifier: "showScore", sender: self)
                }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-       //connect the data from the textfield to the questions view controller
+       //connect the data from the textfield to the questions view controller,so that the teacher can view the write and view notes
+        
         var secondController = segue.destination as! ShowAnswerViewController
         secondController.myString = inputOne.text!
         var secondControllerTwo = segue.destination as! ShowAnswerViewController

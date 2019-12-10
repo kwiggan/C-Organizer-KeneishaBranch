@@ -28,11 +28,13 @@ class ViewController: UIViewController {
     {
         if ((sender as AnyObject).tag == Int(rightAnswerPlacement))
         {
+            //prints right when the user answers questions correctly
             print("Right answer! Good Job!")
             points += 1
         }
         else
         {
+            //prints wrong when the user answers questions incorrectly
             print ("Wrong Answer!, try again")
         }
         if (currentQuestion != questions.count)
@@ -40,11 +42,9 @@ class ViewController: UIViewController {
             newQuestions()
         }
             
-        else
-           {
-           performSegue(withIdentifier: "showScore", sender: self)
-           }
+        
     }
+    //have the test questions animated
     override func viewDidAppear(_ animated: Bool)
     {
         newQuestions()
@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     var x = 1
     for i in 1...3
     {
-        //Create a button
+        //Create a button for user to tap on when answering questions
         button = view.viewWithTag(i) as! UIButton
         if (i == Int(rightAnswerPlacement))
         {
@@ -76,17 +76,13 @@ class ViewController: UIViewController {
         }
        
     }
+    //changes the questions
      currentQuestion += 1
     }
     
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        //testing
+        
        
     }
 
